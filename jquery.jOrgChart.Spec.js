@@ -28,6 +28,10 @@ describe('jOrgChart', function() {
 			$("#org").jOrgChart();
 		});
 
+		afterEach(function() {
+			$('.jOrgChart').remove();
+		});
+
 		it('should build the correct tables', function() {
 			var expected = '<table cellpadding="0" cellspacing="0" border="0">' +
 								'<tbody>' +
